@@ -1,70 +1,72 @@
 @if(data){
-  <section class="main">
-    <h4 class="pt-1 fw-bold fs-4">My Daily Jobs Status</h4>
-    <span class="text mt-2 text-muted fw-medium"
-      >last update on {{ data.last_update }}</span
-    >
-    <div class="container-fluid mt-3">
-      <div class="row">
-        <div class="col-xl col-lg-4 col-6 px-0">
-          <div>
-            <div class="py-2 d-flex align-items-center ">
-              <div class="border border-2 rounded-3 allJobs job">
-                <i class="fa-regular fa-copy fs-4"></i>
-              </div>
-              <p class="m-0 ps-2 fs-3">{{ data.all }}</p>
+<section class="main">
+  <h4 class="pt-1 fw-bold fs-4">My Daily Jobs Status</h4>
+  <span class="text mt-2 text-muted fw-normal"
+    >last update on {{ data.last_update }}</span
+  >
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-xl col-lg-4 col-6 px-0">
+        <div>
+          <div class="py-2 d-flex align-items-center">
+            <div class="border border-2 rounded-3 allJobs job">
+              <i class="fa-regular fa-copy fs-4 fa-fw"></i>
             </div>
-            <span class="fw-medium ">All Jobs</span>
+            <p class="m-0 ps-2 fs-4 fw-medium">{{ data.all }}</p>
           </div>
+          <span class="fw-normal">All Jobs</span>
         </div>
-        <div class="col-xl col-lg-4 col-6 px-0">
-          <div>
-            <div class="py-2 d-flex align-items-center ">
-              <div class="border border-2 rounded-3 successJobs job">
-                <i class="fa-regular fa-calendar-check fs-4 text-success"></i>
-              </div>
-              <p class="m-0 ps-2 fs-3">{{ data.success }}</p>
+      </div>
+      <div class="col-xl col-lg-4 col-6 px-0">
+        <div>
+          <div class="py-2 d-flex align-items-center">
+            <div class="border border-2 rounded-3 successJobs job">
+              <i
+                class="fa-regular fa-calendar-check fs-4 fa-fw text-success"
+              ></i>
             </div>
-            <span class="fw-medium ">Success</span>
+            <p class="m-0 ps-2 fs-4 fw-medium">{{ data.success }}</p>
           </div>
+          <span class="fw-normal">Success</span>
         </div>
-        <div class="col-xl col-lg-4 col-6 px-0">
-          <div>
-            <div class="py-2 d-flex align-items-center ">
-              <div class="border border-2 rounded-3 inBrogressJobs job">
-                <i class="fa-regular fa-hourglass fs-4 text-primary"></i>
-              </div>
-              <p class="m-0 ps-2 fs-3">{{ data.in_progress }}</p>
+      </div>
+      <div class="col-xl col-lg-4 col-6 px-0">
+        <div>
+          <div class="py-2 d-flex align-items-center">
+            <div class="border border-2 rounded-3 inBrogressJobs job">
+              <i class="fa-regular fa-hourglass fs-4 fa-fw text-primary"></i>
             </div>
-            <span class="fw-medium ">In Progress</span>
+            <p class="m-0 ps-2 fs-4 fw-medium">{{ data.in_progress }}</p>
           </div>
+          <span class="fw-normal">In Progress</span>
         </div>
-        <div class="col-xl col-lg-4 col-6 px-0">
-          <div>
-            <div class="py-2 d-flex align-items-center ">
-              <div class="border border-2 rounded-3 failedJobs job">
-                <i
-                  class="fa-regular fa-file-circle-exclamation fs-4 text-danger"
-                ></i>
-              </div>
-              <p class="m-0 ps-2 fs-3">1000</p>
+      </div>
+      <div class="col-xl col-lg-4 col-6 px-0">
+        <div>
+          <div class="py-2 d-flex align-items-center">
+            <div class="border border-2 rounded-3 failedJobs job">
+              <i
+                class="fa-solid fa-file-circle-exclamation fs-4 fa-fw text-danger"
+              ></i>
             </div>
-            <span class="fw-medium ">Failed</span>
+            <p class="m-0 ps-2 fs-4 fw-medium">1000</p>
           </div>
+          <span class="fw-normal">Failed</span>
         </div>
-        <div class="col-xl col-lg-4 col-6 px-0">
-          <div>
-            <div class="py-2 d-flex align-items-center ">
-              <div class="border border-2 rounded-3 retryJobs job">
-                <i class="fa-solid fa-arrows-rotate fs-4 text-warning"></i>
-              </div>
-              <p class="m-0 ps-2 fs-3">{{ data.retry }}</p>
+      </div>
+      <div class="col-xl col-lg-4 col-6 px-0">
+        <div>
+          <div class="py-2 d-flex align-items-center">
+            <div class="border border-2 rounded-3 retryJobs job">
+              <i class="fa-solid fa-arrows-rotate fs-4 fa-fw text-warning"></i>
             </div>
-            <span class="fw-medium ">Retry</span>
+            <p class="m-0 ps-2 fs-4 fw-medium">{{ data.retry }}</p>
           </div>
+          <span class="fw-normal">Retry</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 }

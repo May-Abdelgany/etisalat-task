@@ -17,6 +17,7 @@ export class AllJobsComponent {
     if (this.data) {
       // options of chart
       this.chartOptions = {
+
         title: {
           text: `100 % `,
           verticalAlign: 'center',
@@ -27,13 +28,15 @@ export class AllJobsComponent {
         },
         animationEnabled: true,
         height: 140,
-        backgroundColor: '#F8F9FA',
+        backgroundColor: 'transparent',
         showInLegend: true,
         data: [
           {
             type: 'doughnut',
             legendMarkerType: 'square',
             showInLegend: true,
+            horizontalAlign: 'left',
+
             dataPoints: this.data,
           },
         ],
