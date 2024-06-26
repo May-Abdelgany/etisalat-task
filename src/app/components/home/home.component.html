@@ -1,0 +1,20 @@
+<div>
+  <app-header></app-header>
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="p-3 border border-2 bg-light rounded-4 all-jobs">
+          <app-all-jobs [data]="allJobs"></app-all-jobs>
+        </div>
+      </div>
+      <div class="col-xl-8">
+        <div class="p-3 mt-4 mt-xl-0 border border-2 bg-light rounded-4">
+          <app-daily-jobs [data]="dialyJobs"></app-daily-jobs>
+        </div>
+      </div>
+      <div class="col-12">
+        <app-activities [data]="activities"></app-activities>
+      </div>
+    </div>
+  </div>
+</div>

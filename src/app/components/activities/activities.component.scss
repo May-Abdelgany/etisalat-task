@@ -1,0 +1,9 @@
+h4::before{
+  content: "";
+  height: 3px;
+  border-radius: 10px;
+  width: 35px;
+  position: absolute;
+  background-color: rgba(166, 135, 99, 0.8);
+  top: 50%;
+}

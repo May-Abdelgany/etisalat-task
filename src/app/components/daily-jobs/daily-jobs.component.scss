@@ -1,0 +1,24 @@
+.main{
+  span{
+    font-size: 14px;
+  }
+  .job{
+    padding: 8px;
+  }
+  .allJobs{
+    background-color: rgba(241, 241, 241, 0.835);
+  }
+   .successJobs{
+    background-color: rgba(161, 235, 181, 0.835);
+  }
+  .inBrogressJobs{
+    background-color: rgba(190, 208, 250, 0.835);
+  }
+  .failedJobs{
+    background-color: rgba(250, 190, 196, 0.835);
+  }
+  .retryJobs{
+    background-color: rgba(250, 222, 190, 0.835);
+
+  }
+}
