@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing'; // Import RouterTestingModule
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { HeaderComponent } from './header.component';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -9,8 +12,23 @@ describe('HeaderComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
-      ]
+        HttpClientTestingModule,
+        RouterTestingModule, 
+        HeaderComponent
+      ],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: {
+                get: () => 'test-id'
+              }
+            },
+            params: of({ id: 'test-id' }),
+          },
+        },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(HeaderComponent);
