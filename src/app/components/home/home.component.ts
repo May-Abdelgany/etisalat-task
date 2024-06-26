@@ -8,6 +8,7 @@ import { AllJob } from '../../models/allJobs.interface';
 import { DialyJobs } from '../../models/dialyJobs.interface';
 import { Activities } from '../../models/activities.interface';
 import { Job } from '../../models/job.interface';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { Job } from '../../models/job.interface';
     AllJobsComponent,
     DailyJobsComponent,
     ActivitiesComponent,
+    HttpClientModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

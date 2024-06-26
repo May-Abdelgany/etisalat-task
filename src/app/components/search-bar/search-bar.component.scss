@@ -9,9 +9,9 @@
   .bar-div {
     height: 50px;
     //start div
-    .start-div {
-      width: 15%;
-    }
+.start-div {
+  width: 15%;
+}
     // middle div
     .search-bar {
       height: 100% !important;
@@ -36,6 +36,9 @@
     //end div
     .search-icon {
       width: 8%;
+      i {
+        cursor: pointer;
+      }
     }
   }
 }

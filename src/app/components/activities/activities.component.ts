@@ -20,7 +20,7 @@ export class ActivitiesComponent {
     this.search();
   }
   search() {
-    this._DataService.searchKey.subscribe((res) => {
+    this._DataService?.searchKey.subscribe((res) => {
       if (this.jobs) {
         this.jobs = this.data.data;
         this.jobs = this.jobs.filter((element: Job) => {

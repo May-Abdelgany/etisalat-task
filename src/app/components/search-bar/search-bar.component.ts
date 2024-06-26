@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
-  imports: [],
+  imports: [HttpClientModule],
   templateUrl: './search-bar.component.html',
   styleUrl: './search-bar.component.scss',
 })
