@@ -16,8 +16,10 @@ export class ActivitiesComponent {
   jobs!: Job[];
   constructor(private _DataService: DataService) {}
   ngOnInit() {
-    this.jobs = this.data.data;
-    this.search();
+    if (this.data) {
+      this.jobs = this.data.data;
+      this.search();
+    }
   }
   search() {
     this._DataService?.searchKey.subscribe((res) => {

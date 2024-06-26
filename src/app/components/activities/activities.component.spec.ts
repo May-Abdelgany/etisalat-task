@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ActivitiesComponent } from './activities.component';
 
@@ -8,7 +9,8 @@ describe('ActivitiesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ActivitiesComponent],
+      imports: [HttpClientModule],
+      declarations: [], // Remove ActivitiesComponent from declarations
     }).compileComponents();
 
     fixture = TestBed.createComponent(ActivitiesComponent);
@@ -20,3 +22,4 @@ describe('ActivitiesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
